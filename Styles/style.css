@@ -263,7 +263,7 @@ header.active #bar{
 }
 
 @media(max-width: 688px) {
-.we-grant .we-grant-u img {
+.we-grant .we-grant-u h4 {
     display: none;
 }
 .we-grant .split {

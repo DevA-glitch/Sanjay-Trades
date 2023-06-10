@@ -262,7 +262,7 @@ header.active #bar{
     font-weight: 800;
 }
 
-@media(max-width: 688px) {
+@media(max-width: 800px) {
 .we-grant .we-grant-u h4 {
     display: none;
 }

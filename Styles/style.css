@@ -139,7 +139,15 @@ header.active .logo a{
 header.active ul li a{
     color: #207178;
     border-color: #207178;
+    font-size: 2.5rem;
+    transition: .3s;
+    padding: 10px 30px;
 }
+
+header.active ul li a:hover {
+    background-color: black;
+}
+
 header.active #bar{
     background: #207178;
     color: #207178;
@@ -752,28 +760,45 @@ header.active #bar{
     }
 }
 
-.top{
+.footer {
     position: fixed;
-    bottom: 50px;
     right: 30px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px;
+    border-radius: 34px;
+    color: rgb(0, 0, 0);
     text-align: center;
-    z-index: 122;
-    border: 1px solid #000;
-    border-radius: 50%;
-    transition: .4s ease-in-out;
-    cursor: pointer;
-    display: none;
-}
-.top i{
-    font-size: 20px;
-    vertical-align: middle;
-}
-.top:hover{
-    background: var(--main-color);
-    box-shadow: 0px 0px 1px 1px var(--main-color);
-    border-color: #f9f9f9;
-    color: #FFF;
-}
+ }
+
+ .footer {
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ }
+
+ .footer span {
+    line-height: 60px;
+    
+ }
+
+ .footer a {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+ }
+
+ .footer .what {
+    padding: 5px 25px;
+    background-color: green;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+ }
+
+ .footer .call {
+    padding: 5px 25px;
+    background-color: red;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+ }

@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ysabeau:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Ysabeau', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+/* 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header .bar {
+    display: none;
+}
+
+.bar {
+    font-size: 3rem;
+    color: white;
+}
+
+@media(max-width: 991px) {
+    header .navigation {
+        position: absolute;
+        top: 75px;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header .navigation li {
+        margin: 11px 0;
+    }
+
+    header .bar {
+        display: block;
+    }
+
+} */
+
+
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    padding: 13px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    transition: .5s ease-in-out;
+}
+
+header .logo a{
+    font-size: 28px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFF;
+    font-family: 'Fenix', serif;
+}
+header .logo img{
+    width: 30px;
+    margin-top: -5px;
+}
+header ul{
+    display: flex;
+    margin: 0;
+}
+header ul li{
+    margin: 0px 20px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none!important;
+    text-transform: capitalize;
+    display: block;
+    transition: .4s;
+    font-size: 15px;
+}
+header ul li a:hover{
+    color: #45ccb8;
+}
+
+header .bars{
+    display: none;
+}
+header .bars img{
+    width: 30px;
+    cursor: pointer;
+}
+
+header.active{
+    background: #FFF;
+    box-shadow: 0px 1px 0px #DDD;
+}
+header.active .logo a{
+    color: #207178;
+}
+header.active ul li a{
+    color: #207178;
+    border-color: #207178;
+}
+header.active #bar{
+    background: #207178;
+    color: #207178;
+    padding: 4px 5px;
+    width: 33px;
+}
+@media(max-width: 991px){
+    header .navigation{
+        display: block;
+        height: 100vh;
+        width: 50%;
+        background: rgba(0,0,0,.5);
+        position: absolute;
+        top: 68px;
+        right: -50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+    }
+    header.active .navigation{
+        background: #FFF;
+        box-shadow: -1px 0px 0px #DDD;
+    }
+    header .navigation li{
+        margin: 15px 0px;
+    }
+    header .bars{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    header{
+        padding: 13px 30px;
+    }
+    header .navigation.new{
+        width: 100%;
+        right: -100%;
+    }
+}
+
+
+.big-bg {
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/HomeImage/1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.big-bg .bg-contnet {
+    color: #fff;
+}
+
+.big-bg .bg-contnet h1 {
+    font-size: 60px;
+    font-weight: 700 ;
+}
+
+.bg-link button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 83, 83, 0.534);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.bg-link button:hover {
+    background-color: #ffe62b7d;
+}
+
+.bg-link button a {
+    color: #fff;
+}
+
+.big-collection {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.big-collection .collect-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-row-gap: 25px;
+}
+
+.big-collection .collect-flex .collect {
+    margin: 0px 10px;
+    text-align: center;
+    transition: .5s;
+    padding: 10px;
+    border: 2px solid rgb(243, 243, 243);
+}
+
+.big-collection .collect-flex .collect:hover {
+    box-shadow: 10px 10px rgb(255, 127, 127);
+
+}
+
+.big-collection .collect-flex .collect .image img {
+    width: 12rem;
+    cursor: pointer;
+}
+
+.big-collection .collect-flex .link {
+    margin-top: 20px;
+}
+
+.collect-flex .link a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+
+/* shop */
+.big-shop {
+    width: 90%;
+    margin: 200px auto;
+}
+
+.big-shop .shop-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.big-shop .shop-title h2 {
+    font-weight: 700;
+}
+
+.big-shop .shop-title p {
+    font-size: 15px;
+}
+
+.big-shop .shop-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shop-flex .shop-one {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-flex .shop-one img {
+    width: 100%;
+}
+
+.shop-three {
+    width: 44%;
+}
+
+.shop-three img {
+    width: 100%;
+}
+
+.shop-flex .shop-one .image-one {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.shop-one .overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    color: #fff;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.shop-one .overly section {
+    font-size: 15px;
+}
+
+.shop-one .overly h3 {
+    margin-bottom: 3px;
+}
+
+.shop-one .overly span {
+    color: skyblue;
+}
+
+.shop-one .overly .link {
+    position: absolute;
+    bottom: 50px;
+}
+
+.shop-three .overly .link {
+    position: absolute;
+    bottom: 30px;
+}
+
+.overly .link a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    overflow: hidden;
+}
+
+.overly .link i {
+    vertical-align: middle;
+}
+
+.overly .link a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s ease-in-out;
+}
+
+.overly .link a:hover::before {
+    left: 0;
+}
+
+.shop-one .image-one:hover .text {
+    animation: textimage .8s ease-in-out forwards ;
+}
+
+@keyframes textimage {
+    0% {
+        opacity: 0;
+        margin-bottom: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+}
+
+.shop-one .image-one .text {
+    animation: textimage2 .8s ease-in-out forwards ;
+}
+
+@keyframes textimage2 {
+    0% {
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+
+    100% {
+        opacity: 0;
+        margin-bottom: 50px;
+    }
+}
+
+.shop-one .image-one:hover .overly {
+    visibility: visible;
+}
+
+.shop-one .image-one:hover .link {
+    animation: textlink .8s ease-in-out forwards;
+}
+
+.shop-three:hover .overly {
+    visibility: visible;
+}
+
+.shop-three:hover .link {
+    animation: textlink .8s ease-in-out forwards;
+}
+
+.shop-flex .shop-three {
+    position: relative;
+    height: 100%;
+}
+
+.shop-three .overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    color: #fff;
+    visibility: hidden;
+    transition: .5s;
+}
+
+@keyframes textlink {
+    0% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 30px;
+    }
+}
+
+.shop-one .image-one .link {
+    animation: textlink2 .8s ease-in-out forwards;
+}
+
+
+@keyframes textlink2 {
+    0% {
+        opacity: 1;
+        bottom: 30px;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 0px;
+    }
+}
+
+@media(max-width: 991px) {
+    .shop-flex .shop-one {
+        width: 49%;
+    }
+    .shop-flex .shop-three {
+        width: 100%;
+    }
+}
+
+@media(max-width: 576px) {
+    .shop-flex .shop-one {
+        width: 100%;
+    }
+}

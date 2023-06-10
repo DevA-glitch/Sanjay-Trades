@@ -139,7 +139,7 @@ header.active .logo a{
 header.active ul li a{
     color: #000000;
     border-color: #207178;
-    padding: 10px 30px;
+    padding: 10px 10px;
     font-weight: 700;
 }
 
@@ -151,12 +151,13 @@ header.active #bar{
     padding: 4px 5px;
     width: 33px;
 }
+
 @media(max-width: 991px){
     header .navigation{
         display: block;
         height: 100vh;
         width: 50%;
-        background: rgba(0,0,0,.5);
+        background: rgba(25, 25, 25, 0.8);
         position: absolute;
         top: 68px;
         right: -50%;
@@ -166,6 +167,7 @@ header.active #bar{
         justify-content: center;
         flex-direction: column;
         transition: .5s ease-in-out;
+        padding-bottom: 10rem;
     }
     header.active .navigation{
         background: #FFF;
@@ -177,6 +179,11 @@ header.active #bar{
     header .bars{
         display: block;
     }
+
+    header.active ul li a {
+        font-size: 2.5rem;
+    }
+    
 }
 
 @media(max-width: 576px){
@@ -252,7 +259,7 @@ header.active #bar{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 
@@ -268,12 +275,27 @@ header.active #bar{
 }
 
 @media(max-width: 800px) {
-.we-grant .we-grant-u h4 {
-    display: none;
-}
+    .we-grant {
+        gap: 1rem;
+    }
+
 .we-grant .split {
-    margin-right: 5rem;
+    text-align: center;
+    gap: 1rem;
 }
+.we-grant .split h4 {
+    font-size: 14px;
+}
+}
+
+@media(max-width: 374px) {
+
+    .we-grant {
+        gap: 2rem;
+        flex-direction: column;
+    }
+    .we-grant .split {
+    }
 }
 
 .about-info {
@@ -329,7 +351,7 @@ header.active #bar{
 }
 
 .big-bg .bg-contnet h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700 ;
 }
 
@@ -379,6 +401,18 @@ header.active #bar{
 .big-collection .collect-flex .collect .image img {
     width: 12rem;
     cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .big-collection .collect-flex .collect .image img {
+        width: 15rem;
+    }
+}
+
+@media(max-width: 658px) {
+    .big-collection .collect-flex .collect .image img {
+        width: 22rem;
+    }
 }
 
 .big-collection .collect-flex .link {
@@ -539,6 +573,7 @@ header.active #bar{
     }
 }
 
+
 .shop-one .image-one:hover .overly {
     visibility: visible;
 }
@@ -624,13 +659,16 @@ header.active #bar{
     display: flex;
     flex-wrap: wrap;
 }
+
 .footer-image .image1{
     width: 16.6%;
     position: relative;
 }
+
 .footer-image .image1 img{
     width: 100%;
 }
+
 .footer-image .insta{
     position: absolute;
     top: 0;
@@ -644,16 +682,20 @@ header.active #bar{
     transition: .4s ease-in-out;
     opacity: 0;
 }
+
 .footer-image .insta img{
     width: 30px;
     cursor: pointer;
 }
+
 .footer-image .image1:hover .insta{
     opacity: 1;
 }
+
 .footer-image .image1:hover .insta img{
     animation: instagram .5s ease-in-out forwards;
 }
+
 @keyframes instagram {
     0%{
         opacity: 0;
@@ -788,14 +830,14 @@ header.active #bar{
 
  .footer .what {
     padding: 7px 25px;
-    background-color: green;
+    background-color: rgb(71, 185, 71);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
  }
 
  .footer .call {
     padding: 7px 25px;
-    background-color: red;
+    background-color: rgb(255, 110, 110);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
  }

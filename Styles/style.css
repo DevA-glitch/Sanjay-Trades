@@ -137,16 +137,13 @@ header.active .logo a{
     color: #207178;
 }
 header.active ul li a{
-    color: #207178;
+    color: #000000;
     border-color: #207178;
-    font-size: 2.5rem;
-    transition: .3s;
     padding: 10px 30px;
+    font-weight: 700;
 }
 
-header.active ul li a:hover {
-    background-color: black;
-}
+
 
 header.active #bar{
     background: #207178;
@@ -790,14 +787,14 @@ header.active #bar{
  }
 
  .footer .what {
-    padding: 5px 25px;
+    padding: 7px 25px;
     background-color: green;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
  }
 
  .footer .call {
-    padding: 5px 25px;
+    padding: 7px 25px;
     background-color: red;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;

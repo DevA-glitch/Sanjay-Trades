@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ysabeau:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*
 font-family: 'Poppins', sans-serif;
@@ -20,7 +21,7 @@ a {
 }
 
 body {
-    font-family: 'Ysabeau', sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 /* 
 header {
@@ -390,7 +391,7 @@ header.active #bar{
     margin: 0px 10px;
     text-align: center;
     transition: .5s;
-    padding: 15px;
+    padding: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 3px;
     background-color: #ffffff;
@@ -400,7 +401,8 @@ header.active #bar{
 .big-collection .collect-flex .collect .image img {
     width: 16rem;
     cursor: pointer;
-    border: 3px solid black;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 3px;
 }
 
 .big-collection .collect-flex .collect .image {
@@ -418,6 +420,18 @@ header.active #bar{
 
 .big-collection .collect-flex .collect .image img:hover {
     transform: scale(1.2);
+}
+
+.big-collection .collect-flex .collect .more {
+    border: none;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: skyblue;
+}
+
+.big-collection .collect-flex .collect .more a {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
 }
 
 
@@ -921,3 +935,62 @@ header.active #bar{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
  }
+
+ /* about page start */
+ 
+.big-bg-about {
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/aboutimage/banner.jpg);
+    background-size: cover;
+    height: 45vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.big-bg-about .bg-contnet h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.big-bg-product {
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/productimage/banner.jpg);
+    background-size: cover;
+    height: 45vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.big-bg-product .bg-contnet h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+.big-bg-contact {
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/cotactimage/banner.jpg);
+    background-size: cover;
+    height: 45vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.big-bg-contact .bg-contnet h1 {
+    color: white;
+    font-size: 4rem;
+}

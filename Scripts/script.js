@@ -41,3 +41,4 @@ function myFun(){
         plus.classList.toggle("img_active")
     }
 }
+

@@ -380,25 +380,22 @@ header.active #bar{
 .big-collection .collect-flex {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: .2rem;
     align-items: center;
     flex-wrap: wrap;
-    grid-row-gap: 25px;
+    grid-row-gap: 20px;
 }
 
 .big-collection .collect-flex .collect {
     margin: 0px 10px;
     text-align: center;
     transition: .5s;
-    padding: 15px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 3px;
-    background-color: #F8F6F4;
 }
 
 
 .big-collection .collect-flex .collect .image img {
-    width: 12rem;
+    width: 15rem;
     cursor: pointer;
 }
 
@@ -420,17 +417,34 @@ header.active #bar{
 }
 
 
+.big-collection .collect-flex .collect {
+    background-color: #fbfbfb;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-align: start;
+    padding: 10px 0;
+}
+
+.big-collection .collect-flex .collect .link {
+    padding: 15px 10px;
+}
+
+.big-collection .collect-flex .collect button {
+    border: 1px solid black;
+    padding: 2px 5px;
+    margin-left: .7rem;
+}
+
 @media(max-width: 768px) {
     .big-collection .collect-flex .collect .image img {
-        width: 15rem;
+        width: 17rem;
     }
 }
 
 
 
-@media(max-width: 662px) {
+@media(max-width: 668px) {
     .big-collection .collect-flex .collect .image img {
-        width: 13rem;
+        width: 15rem;
     }
     .big-collection .collect-flex .collect .link a {
         font-size: 13px;
@@ -440,7 +454,7 @@ header.active #bar{
 
 @media(max-width: 601px) {
     .big-collection .collect-flex .collect .image img {
-        width: 10rem;
+        width: 13rem;
     }
     .big-collection .collect-flex .collect .link a {
         font-size: 12px;
@@ -448,9 +462,9 @@ header.active #bar{
     }
 }
 
-@media(max-width: 484px) {
+@media(max-width: 524px) {
     .big-collection .collect-flex .collect .image img {
-        width: 7.5rem;
+        width: 10rem;
     }
     .big-collection .collect-flex .collect .link a {
         font-size: 12px;
@@ -458,6 +472,15 @@ header.active #bar{
     }
 }   
 
+@media(max-width: 418px) {
+    .big-collection .collect-flex .collect .image img {
+        width: 9.5rem;
+    }
+    .big-collection .collect-flex .collect .link a {
+        font-size: 12px;
+        font-weight: 700;
+    }
+}   
 
 @media(max-width: 395px) {
     .big-collection .collect-flex .collect .image img {

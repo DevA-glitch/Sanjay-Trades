@@ -428,12 +428,13 @@ header.active #bar{
 
 
 
-@media(max-width: 658px) {
+@media(max-width: 662px) {
     .big-collection .collect-flex .collect .image img {
         width: 13rem;
     }
     .big-collection .collect-flex .collect .link a {
-        font-size: 10px;
+        font-size: 13px;
+        font-weight: 700;
     }
 }
 
@@ -443,15 +444,17 @@ header.active #bar{
     }
     .big-collection .collect-flex .collect .link a {
         font-size: 12px;
+        font-weight: 700;
     }
 }
 
-@media(max-width: 460px) {
+@media(max-width: 484px) {
     .big-collection .collect-flex .collect .image img {
         width: 7.5rem;
     }
     .big-collection .collect-flex .collect .link a {
         font-size: 12px;
+        font-weight: 700;
     }
 }   
 
@@ -462,6 +465,17 @@ header.active #bar{
     }
     .big-collection .collect-flex .collect .link a {
         font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+@media(max-width: 341px) {
+    .big-collection .collect-flex .collect .image img {
+        width: 4rem;
+    }
+    .big-collection .collect-flex .collect .link a {
+        font-size: 8px;
+        font-weight: 700;
     }
 }
 

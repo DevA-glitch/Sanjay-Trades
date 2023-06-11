@@ -20,10 +20,10 @@ function myBars(){
     bars.onclick = function(){
         if(nav.style.right == "0%"){
             nav.style.right = "-50%";
-            bars.src = "./Images/HomeImage/side-menu.png"
+            bars.src = "./Images/HomeImage/menu.png"
         }else{
             nav.style.right = "0%";
-            bars.src = "./Images/HomeImage/close.png"
+            bars.src = "./Images/HomeImage/close (1).png"
         }
         nav.classList.toggle("new")
     }

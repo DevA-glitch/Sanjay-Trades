@@ -380,7 +380,7 @@ header.active #bar{
 .big-collection .collect-flex {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     flex-wrap: wrap;
     grid-row-gap: 25px;
@@ -426,9 +426,42 @@ header.active #bar{
     }
 }
 
+
+
 @media(max-width: 658px) {
     .big-collection .collect-flex .collect .image img {
-        width: 22rem;
+        width: 13rem;
+    }
+    .big-collection .collect-flex .collect .link a {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 601px) {
+    .big-collection .collect-flex .collect .image img {
+        width: 10rem;
+    }
+    .big-collection .collect-flex .collect .link a {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 460px) {
+    .big-collection .collect-flex .collect .image img {
+        width: 7.5rem;
+    }
+    .big-collection .collect-flex .collect .link a {
+        font-size: 10px;
+    }
+}   
+
+
+@media(max-width: 395px) {
+    .big-collection .collect-flex .collect .image img {
+        width: 6rem;
+    }
+    .big-collection .collect-flex .collect .link a {
+        font-size: 10px;
     }
 }
 

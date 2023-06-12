@@ -990,3 +990,117 @@ header.active #bar{
     color: white;
     font-size: 4rem;
 }
+
+.about-know-right .accordion {
+    background-color: #ffcaca;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  
+  .about-know-right .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .about-know-right .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .about-know-right .active:after {
+    content: "\2212";
+  }
+  
+  .about-know-right .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .about-page-info {
+    margin: 50px;
+  }
+
+  .about-page-info .about-know {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .about-page-info .about-know h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-page-info .about-know p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+
+  .about-page-info .about-know-split {
+    margin-top: 4rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .about-know-left {
+    background-color: rgb(198, 242, 255);
+    padding: 10px;
+  }
+
+.about-know-split .about-know-left img {
+    width: 15rem;
+    height: 25vh;
+}
+
+.about-know-split .about-know-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 1rem;
+}
+
+.about-know-split .about-know-left p {
+    width: 15rem;
+    font-size: 16px;
+}
+
+@media(max-width: 1600px) {
+    .about-page-info .about-know-split {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 874px) {
+    .about-know-split .about-know-left {
+        display: none;
+    }
+}
+
+
+@media(max-width: 480px) {
+    .about-page-info .about-know h1 {
+        font-size: 2rem;
+      }
+    
+      .about-page-info .about-know p {
+        font-size: 1rem;
+        line-height: 2.5rem;
+      }
+}

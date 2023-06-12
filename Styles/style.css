@@ -348,6 +348,7 @@ header.active #bar{
     align-items: center;
     text-align: center;
 }
+
 .big-bg .bg-contnet {
     color: #fff;
 }
@@ -399,7 +400,7 @@ header.active #bar{
 
 
 .big-collection .collect-flex .collect .image img {
-    width: 16rem;
+    width: 14rem;
     cursor: pointer;
     border: 2px solid rgb(211, 211, 211);
     border-radius: 3px;
@@ -425,7 +426,6 @@ header.active #bar{
 .big-collection .collect-flex .collect .more {
     border: none;
     margin-top: 10px;
-    padding: 5px 10px;
     background-color: skyblue;
 }
 
@@ -463,39 +463,39 @@ header.active #bar{
 
 @media(max-width: 684px) {
     .big-collection .collect-flex .collect .image img {
-        width: 15rem;
+        width: 13rem;
     }
 }
 
 
 @media(max-width: 592px) {
     .big-collection .collect-flex .collect .image img {
-        width: 12rem;
+        width: 21rem;
     }
 }
 
 @media(max-width: 492px) {
     .big-collection .collect-flex .collect .image img {
-        width: 10rem;
+        width: 22rem;
     }
 }
 
 @media(max-width: 430px) {
     .big-collection .collect-flex .collect .image img {
-        width: 9rem;
+        width: 20rem;
     }
 }
 
 @media(max-width: 398px) {
     .big-collection .collect-flex .collect .image img {
-        width: 8rem;
+        width: 19rem;
     }
 }
 
 
 @media(max-width: 366px) {
     .big-collection .collect-flex .collect .image img {
-        width: 7rem;
+        width: 12rem;
     }
 }
 
@@ -504,10 +504,6 @@ header.active #bar{
         width: 15rem;
     }
 }
-
-
-
-
 
 .big-collection .collect-flex .link {
     margin-top: 20px;
@@ -913,24 +909,24 @@ header.active #bar{
  }
 
  .footer span {
-    line-height: 60px;
+    line-height: 55px;
     
  }
 
  .footer a {
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(255, 0, 0, 0.15) 0px 3px 3px 0px;
  }
 
  .footer .what {
-    padding: 7px 25px;
-    background-color: rgb(71, 185, 71);
+    padding: 8px 25px;
+    background-color: rgb(82, 196, 82);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
  }
 
  .footer .call {
-    padding: 7px 25px;
+    padding: 8px 25px;
     background-color: rgb(255, 110, 110);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;

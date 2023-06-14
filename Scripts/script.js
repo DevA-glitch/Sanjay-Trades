@@ -56,3 +56,64 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+// Get the details div elements
+const detailsDivs = document.querySelectorAll('.details');
+
+// Get the frame elements
+const frameImage = document.getElementById('frameImage');
+
+// Get the expand icon and close icon elements
+const expandIcons = document.querySelectorAll('.expandIcon');
+const closeIcon = document.getElementById('closeIcon');
+
+// Set the position property to "relative" for the details divs
+detailsDivs.forEach((detailsDiv) => {
+  detailsDiv.style.position = 'relative';
+});
+
+// Add event listener to each expand icon
+expandIcons.forEach((expandIcon, index) => {
+  expandIcon.addEventListener('click', () => {
+    const imageSrc = detailsDivs[index].querySelector('.myImage').src;
+    frameImage.src = imageSrc;
+    document.getElementById('photoFrame').style.display = 'block';
+  });
+});
+
+// Add event listener to close icon
+closeIcon.addEventListener('click', () => {
+  document.getElementById('photoFrame').style.display = 'none';
+});
+
+
+  // Get all filter buttons
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  
+  // Get all images
+  const images = document.querySelectorAll('.image');
+  
+  // Add click event listener to each filter button
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      // Get the category value from the data-category attribute
+      const category = button.getAttribute('data-category');
+  
+      // Show all images if the category is "all"
+      if (category === 'all') {
+        images.forEach((image) => {
+          image.style.display = 'block';
+        });
+      } else {
+        // Hide images that don't belong to the selected category
+        images.forEach((image) => {
+          if (!image.classList.contains(category)) {
+            image.style.display = 'none';
+          } else {
+            image.style.display = 'block';
+          }
+        });
+      }
+    });
+  });
+  

@@ -953,6 +953,13 @@ header.active #bar{
     font-size: 4rem;
 }
 
+@media(max-width: 398px) {
+    .big-bg-about .bg-contnet  h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
 .big-bg-product {
     background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/productimage/banner.jpg);
     background-size: cover;
@@ -972,6 +979,13 @@ header.active #bar{
     font-size: 4rem;
 }
 
+@media(max-width: 398px) {
+    .big-bg-product .bg-contnet  h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
 .big-bg-contact {
     background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/cotactimage/banner.jpg);
     background-size: cover;
@@ -989,6 +1003,13 @@ header.active #bar{
 .big-bg-contact .bg-contnet h1 {
     color: white;
     font-size: 4rem;
+}
+
+@media(max-width: 398px) {
+    .big-bg-contact .bg-contnet  h1 {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
 }
 
 .about-know-right .accordion {
@@ -1201,7 +1222,7 @@ header.active #bar{
   }
   
   .details-list {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid rgb(182, 182, 182);
     box-shadow: rgba(138, 138, 138, 0.16) 0px 1px 4px;
   }
@@ -1210,6 +1231,26 @@ header.active #bar{
     border: 2px solid black;
     margin: auto;
   }
+
+  @media(max-width: 398px) {
+    .details-list .details {
+        width: 17rem;
+        height: 21rem;
+    }
+}
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    padding: 5px 10px;
+}
   
   table {
     width: 100%;

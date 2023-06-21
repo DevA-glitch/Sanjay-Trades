@@ -1060,6 +1060,15 @@ header.active #bar{
     gap: 1.5rem;
   }
 
+  .about-know-split {
+    padding: 0 10rem;
+  }
+
+  .about-know-split .about-know-right .panel p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 1rem;
+  }
   .about-page-info .about-know h1 {
     font-size: 2.5rem;
   }
@@ -1080,7 +1089,7 @@ header.active #bar{
 
   .about-know-left {
     background-color: rgb(198, 242, 255);
-    padding: 10px;
+    padding: 10px; 
   }
 
 .about-know-split .about-know-left img {
